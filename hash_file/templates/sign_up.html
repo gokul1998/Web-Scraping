@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login page</title>
+        <link rel="stylesheet" href="static/style.css" type="text/css">
+        <script src="#"></script>
+
+    </head>
+    <body>
+    <div class = header>
+    <div class="w3-bar w3-blue">
+        <div class="w3-bar-item"><center><h1><p class="g"><font size = "24">HASHES UNIVERSE</font></p> </h1></center></div>
+    </div> </div>
+
+        <div class="container">
+            {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% block body %}{% endblock %}
+            <br>
+
+            <p class="g">REGISTER</p>
+
+            <form method="POST" action="">
+              {{ form.csrf_token }}
+              <lable>{{form.name.label}}</lable>
+              {{form.name}}
+
+             <ul>
+               {%for error in form.name.errors %}
+               <li style="color:red;"> {{error}} </li>
+               {%endfor%}
+             </ul>
+
+                <lable>{{form.username.label}}</lable>
+                  {{form.username}}
+
+                <ul>
+                  {%for error in form.username.errors %}
+                  <li style="color:red;"> {{error}} </li>
+                  {%endfor%}
+                </ul>
+
+
+
+                <lable>{{form.email.label}}</lable>
+                   {{form.email}}
+
+                  <ul>
+                    {%for error in form.email.errors %}
+                    <li style="color:red;"> {{error}} </li>
+                    {%endfor%}
+                  </ul>
+
+
+                <lable>{{form.password.label}}</lable>
+                   {{form.password}}
+
+                <ul>
+                  {%for error in form.password.errors %}
+                  <li style="color:red;"> {{error}} </li>
+                  {%endfor%}
+                </ul>
+
+
+                <lable>{{form.confirm_password.label}}</lable>
+                    {{form.confirm_password}}
+
+                <ul>
+                  {%for error in form.confirm_password.errors %}
+                  <li style="color:red;"> {{error}} </li>
+                  {%endfor%}
+                </ul>
+
+
+
+            <button class="llb" type="submit">{{form.submit.label}}</button>
+            <p class="llp"><a href ="http://localhost:5000/" style="color:white">Already a member? Sign in!</a></p>
+            </form>
+        </div>
+
+    </body>
+</html>

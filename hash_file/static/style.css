@@ -1,0 +1,151 @@
+
+body{
+    background: #9B5B40;
+    background: -webkit-linear-gradient(#455062, #9B5B40);
+    background: -o-linear-gradient(r#455062, #9B5B40);
+    background: -moz-linear-gradient(#455062, #9B5B40);
+    background: linear-gradient(#455062, #9B5B40);
+    color:white ;
+    font-family: tahoma;
+}
+
+.container{
+    margin-top: 40px;
+    margin-left: 525px;
+    height: 900px;
+    width: 385px;
+    background-color: #35475F;
+    box-shadow: 7px 15px 70px black;
+
+}
+
+
+.active{
+    border-style: none;
+    float: right;
+    margin: 30px 10px 0px 10px;
+    padding: 4px 10px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    color: white;
+    box-shadow: 9px 4px 55px black;
+    background-color: #26B297;
+    height: auto;
+    width: auto;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.notactive{
+    border-style: none;
+    float: right;
+    margin: 30px -10px;
+    padding: 4px 10px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    color: #ccc;
+    background-color: #425262;
+    width: auto;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.clearfix{clear: both;}
+
+.g{
+    color: #ccc;
+    margin: 20px 0px 20px 40px;
+    font-size:18px;
+    margin-bottom: 45px;
+    cursor: pointer;
+
+}
+.ac{
+    color: white;
+    border-bottom: solid 2px #26B297;
+}
+.g span{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+
+}
+.header {
+  overflow: hidden;
+  background-color: #35475F ;
+  padding: 10px 10px;
+  box-shadow: 7px 15px 70px black;
+}
+
+lable{
+    margin-left: 35px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+input{
+    display: block;
+    padding: 5px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    width: 300px;
+    border-style: none;
+    border-bottom: solid 1px #ccc;
+    background-color: #35475F;
+    font-family: tahoma;
+    font-size: 15px;
+    color: #ccc;
+}
+
+.cb{
+    border-style: none;
+    color: #26B297;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+
+.container p .tc{
+    font-size: 18px;
+    font-weight: 500px;
+    margin-top: -150px;
+    display: inline-block;
+    border-bottom: solid 2.5px #26B297;
+}
+.container .lp{
+    font-size: 14px;
+    font-weight: 500px;
+    margin-top: -150px;
+    display: inline-block;
+
+}
+
+.llb{
+    display: block;
+    margin-top: 20px;
+    margin-left: 20%;
+    background-color: #26B297;
+    border-radius: 9px;
+    padding: 4px 10px;
+    height: 30px;;
+    width: 80px;
+    color: white;
+    border-style: none;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.llp{
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 10px;
+    font-size: 14px;
+    border-bottom: solid 2.5px #26B297;
+    color: #ccc;
+
+}

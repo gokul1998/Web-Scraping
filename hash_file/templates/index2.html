@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>MD5, SHA-1, SHA-256 COLLECTOR</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+      <link rel="stylesheet" href="static/sty.css" type="text/css">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>  Welcome {{name}}  <a style="color: white" href='http://127.0.0.1:5000/logout'>Logout</a></h1>
+  <h2 align='left'><a style="color: white" href='http://127.0.0.1:5000/basic'>HOME</h2></a><h2 align='centre'> {{str}}</h2>
+  <ul class="responsive-table">
+    <li class="table-header">
+      <div class="col col-1">Id</div>
+      <div class="col col-2">SHA-256</div>
+      <div class="col col-3">Date Created</div>
+      <div class="col col-4">Size</div>
+      <div class="col col-5">Source</div>
+
+    </li>
+    {%for d in data%}
+    <li class="table-row">
+      <div class="col col-1" data-label="Id">{{d.id}}</div>
+      <div class="col col-2" data-label="SHA-256">{{d.hash}}</div>
+      <div class="col col-3" data-label="Date Created">{{d.date_created}}</div>
+      <div class="col col-4" data-label="Size">{{d.size}}</div>
+      <div class="col col-5" data-label="Source">{{d.source}}</div>
+
+    </li>
+    {%endfor%}
+
+  </ul>
+</div>
+
+
+
+</body>
+
+</html>
